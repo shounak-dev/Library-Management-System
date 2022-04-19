@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Search" />
+    <item
+        android:id="@+id/itemMyBooks"
+        android:icon="@drawable/hamburger_icon"
+        android:title="See My Books" />
+    <item
+        android:id="@+id/itemFavourites"
+        android:icon="@drawable/hamburger_icon"
+        android:title="My Favourites" />
+
+    <item
+        android:id="@+id/itemLogout"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Logout" />
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Search" />
+    <item
+        android:id="@+id/itemAddBook"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Add Book" />
+    <item
+        android:id="@+id/itemRemoveBook"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Remove Book" />
+    <item
+        android:id="@+id/itemUpdate"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Update" />
+    <item
+        android:id="@+id/itemIssue"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Issue Book Request" />
+    <item
+        android:id="@+id/itemReturnBook"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Return Book from User" />
+    <item
+        android:id="@+id/itemReissue"
+        android:icon="@drawable/hamburger_icon"
+        android:title="ReIssue Book Request" />
+    <item
+        android:id="@+id/itemCollectFine"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Collect Fine" />
+    <item
+        android:id="@+id/itemLogout"
+        android:icon="@drawable/hamburger_icon"
+        android:title="Logout" />
+</menu>

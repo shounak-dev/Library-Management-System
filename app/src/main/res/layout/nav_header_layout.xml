@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#938EEC">
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icon_close" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgUserProfilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imgClose"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:background="#5290F9"
+        android:src="@drawable/my_pic" />
+
+    <TextView
+        android:id="@+id/txtUserProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgUserProfilePic"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sitam Sardar"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUserProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUserProfileName"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="sitamadex11@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_below="@id/txtUserProfileEmail"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"/>
+</RelativeLayout>

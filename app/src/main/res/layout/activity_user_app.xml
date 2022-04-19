@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <data>
+
+   </data>
+
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerlayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context=".UserAppActivity">
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <ImageView
+             android:id="@+id/imgHamburger"
+             android:layout_width="30dp"
+             android:layout_height="35dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="20dp"
+             android:elevation="2dp"
+             android:src="@drawable/hamburger_icon" />
+
+         <androidx.fragment.app.FragmentContainerView
+             android:id="@+id/fragment_container"
+             android:name="androidx.navigation.fragment.NavHostFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:defaultNavHost="true"
+             app:navGraph="@navigation/app_navigation" />
+      </FrameLayout>
+
+      <com.google.android.material.navigation.NavigationView
+          android:id="@+id/navDrawer"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:background="#5290F9"
+          android:backgroundTint="#5290F9"
+          app:headerLayout="@layout/nav_header_layout"
+          app:itemTextAppearance="@style/navDrawerText"
+          app:itemTextColor="@color/white"
+          app:itemIconTint="@color/white"
+          app:menu="@menu/user_drawer_menu" />
+   </androidx.drawerlayout.widget.DrawerLayout>
+</layout>
