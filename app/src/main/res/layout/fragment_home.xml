@@ -1,130 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".presentation.fragment.HomeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ScrollView
+    <data>
+
+    </data>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:context=".presentation.fragment.HomeFragment">
 
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <FrameLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:background="@drawable/curved_blur_background" />
+                android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/llIcons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/curved_blur_background" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/favourites_full" />
-
-                <TextView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/circular_textview_homepage"
-                    android:gravity="center"
-                    android:text="S"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/llIcons"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:orientation="vertical">
-
-                <TextView
+                <LinearLayout
+                    android:id="@+id/llIcons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Welcome back, Student!"
-                    android:textColor="#9D9D9D"
-                    android:textSize="16sp" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/search_icon" />
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circular_textview_homepage"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/llIcons"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Welcome back, Student!"
+                        android:textColor="#9D9D9D"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="What do you want to"
+                        android:textColor="#19191B"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="read today?"
+                        android:textColor="#19191B"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/llText"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/light_violet" />
+
+                <TextView
+                    android:id="@+id/txtNewBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="What do you want to"
+                    android:text="Some New Books"
                     android:textColor="#19191B"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNewBooks"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="read today?"
-                    android:textColor="#19191B"
-                    android:textSize="24sp" />
-            </LinearLayout>
+                    android:layout_below="@id/txtNewBook"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    tools:listitem="@layout/book_list_item"
+                    tools:itemCount="1" />
 
-            <View
-                android:id="@+id/v1"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/llText"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:background="@color/light_violet" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvNewBooks"
+                    android:layout_marginStart="20dp"
+                    tools:listitem="@layout/book_category_list_item"
+                    android:layout_marginTop="25dp"
+                    tools:itemCount="1" />
 
-            <TextView
-                android:id="@+id/txtNewBook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/v1"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Some New Books"
-                android:textColor="#19191B"
-                android:textSize="18sp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvNewBooks"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/txtNewBook"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                tools:itemCount="2" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvTopics"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/rvNewBooks"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                tools:itemCount="1" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvTopicWiseBooks"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/rvTopics"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                tools:itemCount="2" />
-        </RelativeLayout>
-    </ScrollView>
-</RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopicWiseBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvTopics"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/book_list_item" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>
