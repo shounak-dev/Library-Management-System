@@ -11,7 +11,7 @@
        android:id="@+id/drawerlayout"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       tools:context=".UserAppActivity">
+       tools:context=".presentation.activity.UserAppActivity">
 
       <FrameLayout
           android:layout_width="match_parent"
@@ -40,8 +40,8 @@
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
           android:layout_gravity="start"
-          android:background="#5290F9"
-          android:backgroundTint="#5290F9"
+          android:background="#938EEC"
+          android:backgroundTint="#938EEC"
           app:headerLayout="@layout/nav_header_layout"
           app:itemTextAppearance="@style/navDrawerText"
           app:itemTextColor="@color/white"

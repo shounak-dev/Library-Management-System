@@ -1,7 +1,8 @@
-package com.sitamadex11.librarymanagementsystem
+package com.sitamadex11.librarymanagementsystem.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sitamadex11.librarymanagementsystem.R
 
 class AdminAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

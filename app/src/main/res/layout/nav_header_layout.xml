@@ -21,8 +21,8 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
+        android:background="#938EEC"
         android:scaleType="fitCenter"
-        android:background="#5290F9"
         android:src="@drawable/my_pic" />
 
     <TextView
