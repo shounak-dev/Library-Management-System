@@ -19,4 +19,9 @@
         android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.BookDetailFragment"
         android:label="fragment_book_detail"
         tools:layout="@layout/fragment_book_detail" />
+    <fragment
+        android:id="@+id/issueBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.IssueBookFragment"
+        android:label="IssueBookFragment"
+        tools:layout="@layout/fragment_issue_book"/>
 </navigation>
