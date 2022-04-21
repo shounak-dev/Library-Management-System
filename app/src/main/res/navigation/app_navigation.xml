@@ -13,15 +13,22 @@
         <action
             android:id="@+id/action_homeFragment_to_bookDetailFragment"
             app:destination="@id/bookDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
     <fragment
         android:id="@+id/bookDetailFragment"
         android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.BookDetailFragment"
         android:label="fragment_book_detail"
-        tools:layout="@layout/fragment_book_detail" />
+        tools:layout="@layout/fragment_book_detail" >
+        <action
+            android:id="@+id/action_bookDetailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/issueBookFragment"
-        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.IssueBookFragment"
-        android:label="IssueBookFragment"
-        tools:layout="@layout/fragment_issue_book"/>
+        android:id="@+id/searchFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>
