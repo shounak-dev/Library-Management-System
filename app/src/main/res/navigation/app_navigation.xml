@@ -19,19 +19,4 @@
         android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.BookDetailFragment"
         android:label="fragment_book_detail"
         tools:layout="@layout/fragment_book_detail" />
-    <fragment
-        android:id="@+id/issueBookFragment"
-        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.IssueBookFragment"
-        android:label="IssueBookFragment"
-        tools:layout="@layout/fragment_issue_book"/>
-    <fragment
-        android:id="@+id/reIssueBookFragment"
-        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.ReIssueBookFragment"
-        android:label="ReIssueBookFragment"
-        tools:layout="@layout/fragment_issue_book"/>
-    <fragment
-        android:id="@+id/returnBookFragment"
-        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.ReturnBookFragment"
-        android:label="ReturnBookFragment"
-        tools:layout="@layout/fragment_issue_book"/>
 </navigation>

@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_add_book.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_book_detail.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_home.xml" value="0.15806159420289856" />
-        <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_issue_book.xml" value="0.2" />
+        <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_issue_book.xml" value="0.22" />
         <entry key="..\:/Users/SHOUNAK/AndroidStudioProjects/Library-Management-System/app/src/main/res/layout/fragment_search.xml" value="0.15806159420289856" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/circular_textview_homepage.xml" value="0.1165" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/hamburger_icon.xml" value="0.1165" />

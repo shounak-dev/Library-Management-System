@@ -48,14 +48,6 @@
             android:hint="Enter Book Id"
             android:layout_below="@id/upRl"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_below="@id/bookId"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@color/black"/>
-
         <EditText
             android:id="@+id/cardNum"
             android:layout_width="match_parent"
@@ -65,14 +57,6 @@
             android:layout_marginTop="20dp"
             android:hint="Enter Card Number"
             android:layout_below="@id/bookId"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_below="@id/cardNum"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
