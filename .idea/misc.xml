@@ -6,6 +6,7 @@
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/circular_textview_homepage.xml" value="0.1165" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/hamburger_icon.xml" value="0.1165" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/icon_close.xml" value="0.1165" />
+        <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/search_bar_background.xml" value="0.1165" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/drawable/search_icon.xml" value="0.1165" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/activity_admin_app.xml" value="0.25416666666666665" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/activity_main_app.xml" value="0.25416666666666665" />
@@ -14,6 +15,7 @@
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/book_list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/fragment_book_detail.xml" value="0.2" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/layout/nav_header_layout.xml" value="0.264" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/menu/admin_drawer_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/android_project_folder/Jetpack Compose/LibraryManagementSystem/app/src/main/res/menu/user_drawer_menu.xml" value="0.25416666666666665" />
