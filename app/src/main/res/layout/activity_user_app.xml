@@ -7,24 +7,11 @@
 
    </data>
 
-   <androidx.drawerlayout.widget.DrawerLayout
+   <FrameLayout
        android:id="@+id/drawerlayout"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        tools:context=".presentation.activity.UserAppActivity">
-
-      <FrameLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-         <ImageView
-             android:id="@+id/imgHamburger"
-             android:layout_width="30dp"
-             android:layout_height="35dp"
-             android:layout_marginStart="10dp"
-             android:layout_marginTop="20dp"
-             android:elevation="2dp"
-             android:src="@drawable/hamburger_icon" />
 
          <androidx.fragment.app.FragmentContainerView
              android:id="@+id/fragment_container"
@@ -32,20 +19,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              app:defaultNavHost="true"
-             app:navGraph="@navigation/app_navigation" />
-      </FrameLayout>
+             app:navGraph="@navigation/student_app_navigation" />
 
-      <com.google.android.material.navigation.NavigationView
-          android:id="@+id/navView"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:layout_gravity="start"
-          android:background="#938EEC"
-          android:backgroundTint="#938EEC"
-          app:headerLayout="@layout/nav_header_layout"
-          app:itemTextAppearance="@style/navDrawerText"
-          app:itemTextColor="@color/white"
-          app:itemIconTint="@color/white"
-          app:menu="@menu/user_drawer_menu" />
-   </androidx.drawerlayout.widget.DrawerLayout>
+   </FrameLayout>
 </layout>

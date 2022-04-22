@@ -82,7 +82,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
-                                android:text="Welcome back, Student!"
+                                android:text="Welcome back, Sir!"
                                 android:textColor="#9D9D9D"
                                 android:textSize="16sp" />
 
@@ -90,7 +90,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
-                                android:text="What do you want to"
+                                android:text="Here is our all the"
                                 android:textColor="#19191B"
                                 android:textSize="24sp" />
 
@@ -98,7 +98,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
-                                android:text="read today?"
+                                android:text="Book Listings"
                                 android:textColor="#19191B"
                                 android:textSize="24sp" />
                         </LinearLayout>
@@ -121,7 +121,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="25dp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Few Great Books"
+                            android:text="Some New Books"
                             android:textColor="#19191B"
                             android:textSize="18sp" />
 
@@ -169,7 +169,7 @@
                 app:itemTextAppearance="@style/navDrawerText"
                 app:itemTextColor="@color/white"
                 app:itemIconTint="@color/white"
-                app:menu="@menu/user_drawer_menu" />
+                app:menu="@menu/admin_drawer_menu" />
         </androidx.drawerlayout.widget.DrawerLayout>
     </RelativeLayout>
 </layout>

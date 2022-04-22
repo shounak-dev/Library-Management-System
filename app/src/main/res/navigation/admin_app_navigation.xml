@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_app_navigation"
+    app:startDestination="@id/adminHomeFragment">
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.AdminHomeFragment"
+        android:label="AdminHomeFragment" >
+        <action
+            android:id="@+id/action_adminHomeFragment_to_bookDetailFragment2"
+            app:destination="@id/bookDetailFragment2" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_reIssueBookFragment"
+            app:destination="@id/reIssueBookFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_addBookFragment"
+            app:destination="@id/addBookFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_removeFragment"
+            app:destination="@id/removeFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_updateBookFragment"
+            app:destination="@id/updateBookFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_issueBookFragment"
+            app:destination="@id/issueBookFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_returnBookFragment"
+            app:destination="@id/returnBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment2"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.BookDetailFragment"
+        android:label="BookDetailFragment" />
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.AddBookFragment"
+        android:label="AddBookFragment" />
+    <fragment
+        android:id="@+id/removeFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.RemoveFragment"
+        android:label="RemoveFragment" />
+    <fragment
+        android:id="@+id/updateBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.UpdateBookFragment"
+        android:label="UpdateBookFragment" />
+    <fragment
+        android:id="@+id/issueBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.IssueBookFragment"
+        android:label="IssueBookFragment" />
+    <fragment
+        android:id="@+id/returnBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.ReturnBookFragment"
+        android:label="ReturnBookFragment" />
+    <fragment
+        android:id="@+id/reIssueBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.ReIssueBookFragment"
+        android:label="ReIssueBookFragment" />
+</navigation>
