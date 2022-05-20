@@ -113,8 +113,6 @@ class IssueBookFragment : Fragment() {
 
     private fun getTodayDate(): String {
         val c: Date = Calendar.getInstance().time
-        println("Current time => $c")
-
         val df = SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault())
         return df.format(c)
     }

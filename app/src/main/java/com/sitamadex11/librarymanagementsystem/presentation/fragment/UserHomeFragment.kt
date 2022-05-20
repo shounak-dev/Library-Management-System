@@ -1,5 +1,6 @@
 package com.sitamadex11.librarymanagementsystem.presentation.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
@@ -19,6 +21,7 @@ import com.google.firebase.ktx.Firebase
 import com.sitamadex11.librarymanagementsystem.R
 import com.sitamadex11.librarymanagementsystem.data.model.BookDetail
 import com.sitamadex11.librarymanagementsystem.databinding.FragmentHomeBinding
+import com.sitamadex11.librarymanagementsystem.presentation.activity.AuthActivity
 import com.sitamadex11.librarymanagementsystem.presentation.adapter.recyclerview.BookCategoryRecyclerAdapter
 import com.sitamadex11.librarymanagementsystem.presentation.adapter.recyclerview.BookDetailRecyclerAdapter
 
@@ -50,7 +53,13 @@ class UserHomeFragment : Fragment(), NavigationView.OnNavigationItemSelectedList
         binding.rvTopicWiseBooks.adapter = bookDetailAdapter
         binding.rvTopics.layoutManager = LinearLayoutManager(requireContext(),RecyclerView.HORIZONTAL,false)
         binding.rvTopics.adapter = bookCategoryAdapter
+        binding.imgSearch.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
+        }
 
+        binding.navView.getHeaderView(0).findViewById<ImageView>(R.id.imgClose).setOnClickListener {
+            binding.drawerlayout.closeDrawer(GravityCompat.START)
+        }
 //        val dsa = hashMapOf(
 //                "id" to 201,
 //                "author" to listOf("Armstrong Subero"),
@@ -114,17 +123,28 @@ class UserHomeFragment : Fragment(), NavigationView.OnNavigationItemSelectedList
             .addOnFailureListener { exception ->
                 Log.w(TAG, "Error getting documents.", exception)
             }
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
+            R.id.itemHome ->{
+                binding.drawerlayout.closeDrawer(GravityCompat.START)
+            }
+            R.id.itemSearch -> {
+                findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
+            }
             R.id.itemMyBooks -> {
-                Toast.makeText(requireContext(),"${item.title} clicked", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_homeFragment_to_seeMyBookFragment)
             }
             R.id.itemFavourites -> {
-                Toast.makeText(requireContext(),"${item.title} clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),"Feature is coming soon", Toast.LENGTH_SHORT).show()
             }
             R.id.itemLogout -> {
+                val intent = Intent(requireActivity(),AuthActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                requireActivity().finish()
                 Toast.makeText(requireContext(),"${item.title} clicked", Toast.LENGTH_SHORT).show()
             }
         }
