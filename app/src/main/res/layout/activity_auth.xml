@@ -33,15 +33,15 @@
             android:id="@+id/btnAsStudent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/light_violet"
+            android:padding="15dp"
             android:text="As Student"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:padding="15dp"
-            android:layout_marginStart="30dp"
-            android:layout_centerInParent="true"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/light_violet"
             app:cornerRadius="50dp" />
 
         <com.google.android.material.button.MaterialButton

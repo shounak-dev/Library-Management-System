@@ -16,19 +16,29 @@
         <action
             android:id="@+id/action_homeFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_seeMyBookFragment"
+            app:destination="@id/seeMyBookFragment" />
     </fragment>
     <fragment
         android:id="@+id/bookDetailFragment"
         android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.BookDetailFragment"
         android:label="fragment_book_detail"
         tools:layout="@layout/fragment_book_detail" >
-        <action
-            android:id="@+id/action_bookDetailFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMyBookFragment"
+        android:name="com.sitamadex11.librarymanagementsystem.presentation.fragment.SeeMyBookFragment"
+        android:label="SeeMyBookFragment"
+        tools:layout="@layout/fragment_see_my_book"/>
 </navigation>
